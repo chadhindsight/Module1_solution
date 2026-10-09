@@ -1,13 +1,17 @@
 /* TAG SELECTORS: style every element of a type */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
+  background-color: #eaf2f8;
   color: #222222;
   text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 h1 {
   color: #1b4f72;
+  font-size: 36px;
 }
 
 h2 {
@@ -16,6 +20,30 @@ h2 {
 
 a {
   color: #1b4f72;
+  font-weight: bold;
+}
+
+/* PSEUDO-CLASS: :hover runs when the mouse is over the element */
+a:hover {
+  color: #e67e22;
+}
+
+/* Lists: remove the bullets and style each item like a tag */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #d6eaf8;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+li:hover {
+  background-color: #2e86c1;
+  color: white;
 }
 
 /* CLASS SELECTOR: style a group of elements the same way
@@ -23,8 +51,13 @@ a {
 .section {
   background-color: white;
   border: 2px solid #1b4f72;
+  border-radius: 12px;
   padding: 20px;
-  margin: 20px;
+  margin: 20px 0;
+}
+
+.section:hover {
+  border-color: #e67e22;
 }
 
 /* ID SELECTOR: style one unique element */
@@ -32,4 +65,8 @@ a {
   border: 4px solid #2e86c1;
   border-radius: 50%;
   margin: 10px;
+}
+
+#profile-photo:hover {
+  border-color: #e67e22;
 }
