@@ -1,0 +1,35 @@
+/* TAG SELECTORS: style every element of a type */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222222;
+  text-align: center;
+}
+
+h1 {
+  color: #1b4f72;
+}
+
+h2 {
+  color: #2e86c1;
+}
+
+a {
+  color: #1b4f72;
+}
+
+/* CLASS SELECTOR: style a group of elements the same way
+   (box model: border, padding, margin) */
+.section {
+  background-color: white;
+  border: 2px solid #1b4f72;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* ID SELECTOR: style one unique element */
+#profile-photo {
+  border: 4px solid #2e86c1;
+  border-radius: 50%;
+  margin: 10px;
+}
